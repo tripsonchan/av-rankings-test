@@ -22,7 +22,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install scrapling camoufox
-          python -m camoufox fetch --browserforge
+          python -m camoufox fetch
       - name: Fetch the 6 ranking pages (headed under Xvfb, read-only)
         run: xvfb-run -a python fetch.py
       - name: Upload result log
